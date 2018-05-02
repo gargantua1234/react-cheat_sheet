@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server -d --content-base src/ --inline --hot --port 1234",
+    "build": "webpack -d && copy src\\index.html dist\\index.html &&  webpack-dev-server -d --content-base src/ --inline --hot --port 1234",
     "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
   },
   "keywords": [
@@ -22,6 +22,7 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.1.2",
     "webpack-dev-server": "^3.1.3"

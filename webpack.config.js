@@ -1,8 +1,13 @@
-let path = require('path');
+const PATH = require('path');
+// const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const DIST_DIR = path.resolve(__dirname, "dist");
-const SRC_DIR = path.resolve(__dirname, "src" );
+const DIST_DIR = PATH.resolve(__dirname, "dist");
+const SRC_DIR = PATH.resolve(__dirname, "src" );
 
+// const htmlPlugin = new HtmlWebPackPlugin({
+//     template: SRC_DIR + "/index.html",
+//     filename: "../index.html",
+// });
 
 module.exports = {
     entry: SRC_DIR + "/app/index.js",
@@ -23,4 +28,5 @@ module.exports = {
             }
         ]
     }
+    // plugins: [htmlPlugin]
 };
