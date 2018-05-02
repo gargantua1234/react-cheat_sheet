@@ -1,0 +1,29 @@
+{
+  "name": "react2",
+  "version": "1.0.0",
+  "description": "Some ReactJS app",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server -d --content-base src/ --inline --hot --port 1234",
+    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "ablech",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
